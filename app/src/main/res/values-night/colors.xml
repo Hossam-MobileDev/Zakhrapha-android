@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="edittextcolor"> #d4d4d4</color>
+    <color name="elsegelcolor">#cbcbcb</color>
+    <color name="deep_orange_900">#2d2c2c</color>
+    <color name="deep_orange_400">#ff804a</color>
+    <color name="settinglang">#AE878282</color>
+    <color name="customblack">#3c3c3c</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="colorBackground">#000000</color> <!-- Dark grey background -->
+
+</resources>

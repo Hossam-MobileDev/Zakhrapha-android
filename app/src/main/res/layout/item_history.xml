@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@drawable/customedittext"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_vertical">
+
+    <!-- Left Side: Two images vertically -->
+    <LinearLayout
+        android:id="@+id/leftContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/deleteimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="30dp"
+            android:tint="@color/customblack"
+            android:src="@drawable/elsegelclose" />
+
+        <ImageView
+            android:id="@+id/copyIdImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/copy" />
+    </LinearLayout>
+
+    <!-- Center: Text Content -->
+    <TextView
+        android:id="@+id/txtelmodlarow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="*...*االنص*....*"
+        android:textSize="17sp"
+        android:textColor="#292929"
+        android:fontFamily="@font/flavor"
+        android:textStyle="bold" />
+
+    <!-- Right Side: Image and Text vertically -->
+    <LinearLayout
+        android:id="@+id/rightContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/elsegelhide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/elsegelhide"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22/3/2024"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:textColor="#292929"
+            android:fontFamily="@font/almarairegular" />
+    </LinearLayout>
+
+</RelativeLayout>

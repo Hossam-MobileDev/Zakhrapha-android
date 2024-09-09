@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+
+    android:background="@drawable/customedittext"
+    android:layout_margin="5dp"
+    android:layout_height="50dp">
+    <ImageView
+        android:layout_centerVertical="true"
+android:id="@+id/copyimg"
+        android:layout_alignParentLeft="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/copy"
+        android:scaleType="fitXY"></ImageView>
+    <TextView
+        android:layout_centerVertical="true"
+
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtrow"
+        android:text="*...*االنص*....*"
+        android:textSize="17dp"
+        android:textColor=" #292929"
+        android:fontFamily="@font/flavor"
+        android:textFontWeight="500"
+        ></TextView>
+    <ImageView
+        android:layout_centerVertical="true"
+android:id="@+id/favimage"
+        android:layout_alignParentRight="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/group_26"
+        android:scaleType="fitXY"></ImageView>
+
+
+
+
+
+
+
+</RelativeLayout>

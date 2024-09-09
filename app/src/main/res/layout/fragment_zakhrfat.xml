@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ZakhrfatFragment">
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/zahkrafatedittext"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:padding="6dp"
+            android:minLines="3"
+
+            android:hint="أكتب هنا للزخرفة"
+            android:fontFamily="@font/almaraibold"
+            android:gravity="top"
+            android:textSize="30px"
+            android:background="@drawable/customedittext"
+            >
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_clear"
+           />
+    </RelativeLayout>
+-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_input_layout"
+        android:layout_margin="10dp"
+        android:hint="أكتب هنا للزخرفة"
+        android:background="@drawable/customedittext"
+        android:padding="6dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/zahkrafatedittext"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textMultiLine"
+            android:padding="6dp"
+            android:minLines="3"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:textColor="?attr/editTextTextColor"
+            android:fontFamily="@font/almaraibold"
+            android:gravity="top|start"
+            android:textSize="15sp"
+            android:background="@null" /> <!-- Remove default background -->
+
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerzakharef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"/>
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

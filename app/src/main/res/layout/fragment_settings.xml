@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+
+
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBackground"
+
+        tools:context=".SettingsFragment">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@drawable/settingcustomtarqia"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/eltarqia"
+                tools:src= "@drawable/eltarqia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/almaraibold"
+                    android:textColor="@color/white"
+                    android:textSize="40px"
+                    android:layout_marginBottom="5dp"
+                    android:text="ترقية الى زخرفه pro"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/almaraibold"
+                    android:text="حذف كل الاعلانات والتمتع بمزايا زخرفه!"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/almaraibold"
+            android:text="الاعدادات الرئيسية"/>
+
+        <LinearLayout
+            android:background="@color/settinglang"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/global"
+                            tools:src= "@drawable/global"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/almaraibold"
+                            android:text="لغة التطبيق"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/almaraibold"
+                            android:text="العربية"/>
+                      <!--  <ImageView
+                            android:layout_margin="5dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/arrow"
+                            tools:src= "@drawable/arrow"/>-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/settinglang"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/apperance"
+                            tools:src= "@drawable/apperance"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/almaraibold"
+                            android:text="المظهر"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layoutDirection="rtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgtheme"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/helal"
+                            tools:src= "@drawable/helal"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="20dp"
+            android:textSize="15dp"
+            android:text="ساعدنا لتحسين تطبيقنا"
+            android:fontFamily="@font/almaraibold"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:background="@color/settinglang"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/rateimg"
+                    android:src="@drawable/rate"
+                    tools:src= "@drawable/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/almaraibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="قيم تطبيقنا علي متجر جوجل بلاي"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/idgmail"
+                    android:src="@drawable/gmail"
+                    tools:src= "@drawable/gmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/almaraibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="شاركنا اقتراحك"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/alertgmail"
+                    android:src="@drawable/alert"
+                    tools:src= "@drawable/alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/almaraibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text=" لديك مشكلة؟"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/gmag"
+                    android:src="@drawable/breakheart"
+                    tools:src= "@drawable/breakheart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+
+                    android:fontFamily="@font/almaraibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="لاتستمتع لاتطبيق؟"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/shareapp"
+                    android:src="@drawable/returnvector"
+                    tools:src= "@drawable/returnvector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/almaraibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="مشاركة التطبيق مع اصدقاءك"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/recycling"
+                    tools:src= "@drawable/recycling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/almaraibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="استعادة الشراء"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/customblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almaraibold"
+            android:text="تفقد تطبيقاتنا على متجر جوجل"/>
+
+        <LinearLayout
+            android:padding="6dp"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgIconLeftkitaba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/get"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15dp"
+                    android:textColor="#565454"
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kitaba"/>
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15dp"
+                    android:textColor="#a1a1a1"
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arabic font | Photo design app"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/imgIconRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kitaba"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="6dp"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgweather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/get"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15dp"
+                    android:textColor="#565454"
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weather"/>
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15dp"
+                    android:textColor="#a1a1a1"
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arabic font | Photo design app"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/imgketaba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kortoba"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

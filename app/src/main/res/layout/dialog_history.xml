@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_bottom_sheet_background">
+<LinearLayout
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <!-- Left ImageView -->
+                <ImageView
+                    android:id="@+id/left_image"
+                    android:layout_width="wrap_content"
+                    android:tint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrowleft"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- Center TextView -->
+                <TextView
+                    android:id="@+id/center_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/almaraibold"
+                    android:text="السجل"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- Right ImageView -->
+                <ImageView
+                    android:id="@+id/right_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/elsegeldots"
+                    android:tint="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp" />
+
+        </RelativeLayout>
+</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    <!-- RecyclerView to display history items -->
+
+
+</LinearLayout>

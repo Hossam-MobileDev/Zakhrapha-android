@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    android:background="#f7f7f7"
+    tools:context=".SubscriptionActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+  >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/closeimage"
+    android:src="@drawable/imgclose"></ImageView>
+    <TextView
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="كن مميز واشترك!"
+        android:fontFamily="@font/almaraibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:fontFamily="@font/almarairegular"
+        android:text="احصل على استخدام غير محدود لمزايا زخرفه"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/viewpagersubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.rabapp.zakhrapha.CustomCircleIndicator
+        android:id="@+id/circleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIP دعم"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/almaraibold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Description TextView -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/almaraibold"
+        android:text="احصل على الدعم السريع من فريق زخرفه."
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclersubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:itemCount="3"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+   >
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+       android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+android:id="@+id/btnsubscribe"
+            android:textColor="@color/white"
+            android:text="اشترك"
+            android:fontFamily="@font/almaraibold"
+            android:background="@drawable/subscribe_background_orange"
+            android:layout_gravity="bottom" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="شروط الاستخدام |  الخصوصية | الاستعادة"></TextView>
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

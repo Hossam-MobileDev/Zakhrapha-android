@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AsmaaFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/customedittext">
+
+        <!-- EditText -->
+
+            <EditText
+                android:id="@+id/asmaedittext"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:background="#f2f2f2"
+                android:layout_gravity="center_vertical|end"
+                android:fontFamily="@font/almaraibold"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="?attr/editTextTextColor"
+                android:textSize="15sp" />
+
+            <!-- Clear Button -->
+            <ImageButton
+                android:id="@+id/clearButton"
+                android:layout_width="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_clear"
+                />
+
+        <!-- Optional: add padding for better touch area -->
+
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/asmaarow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerasmaa"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

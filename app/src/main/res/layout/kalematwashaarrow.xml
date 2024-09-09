@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+>
+    <!-- Horizontal container for ImageView and TextView -->
+
+    <!-- Horizontal layout for copy ImageView, TextView, and favorite ImageView -->
+    <LinearLayout
+        android:background="@drawable/customedittext"
+
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <!-- Copy ImageView -->
+        <ImageView
+            android:id="@+id/copyIdimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/copy"
+            android:scaleType="fitXY" />
+
+        <!-- TextView in between the two ImageViews -->
+        <TextView
+            android:id="@+id/txtelmodlarow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*...*االنص*....*"
+            android:textSize="18sp"
+            android:textColor="#292929"
+            android:fontFamily="@font/flavor"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical" />
+
+        <!-- Favorite ImageView -->
+        <ImageView
+            android:id="@+id/favoriteIdImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/group_26"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+</LinearLayout>
